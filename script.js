@@ -15,7 +15,7 @@ window.addEventListener("resize", resizeCanvas);
 // Preload images
 for (let i = 1; i <= frameCount; i++) {
   const img = new Image();
-  img.src = `images/ezgif-frame-${String(i).padStart(3, "0")}.jpg`;
+  img.src = `image/ezgif-frame-${String(i).padStart(3, "0")}.jpg`;
   img.onload = () => {
     loadedImages++;
     if (loadedImages === frameCount) drawFrame(0);
